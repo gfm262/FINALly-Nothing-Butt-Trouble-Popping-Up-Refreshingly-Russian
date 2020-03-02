@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "FINALly Nothing Butt Trouble Popping Up Refreshingly Russian",
+    "version": "1.0",
+     "content_scripts": [
+        {
+            "matches": ["<all_urls>"
+            ],
+            "js": ["jquery-3.4.1.min.js", "content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "littlebutt.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions":[
+      "<all_urls>",
+      "activeTab",
+      "tabs",
+      "http://*/",
+      "https://*/",
+      "webRequest",
+      "webRequestBlocking"
+    ]
+}
